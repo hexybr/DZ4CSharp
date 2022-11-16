@@ -12,6 +12,7 @@ if (!int.TryParse(Console.ReadLine()!, out digitA))
 // Функция считающая сумму цифр в числе
 int Sum(int digitA)
 {
+    digitA = Math.Abs(digitA);
     int res = 0; // Доп. переменная в которую складываем сумму
     while (digitA > 0)
     {
